@@ -35,7 +35,7 @@ const cmd = require("node-cmd");
 const prefix = "%%";
 const cooldown = new Set();
 const cdtime = 7;
-client.login("OTg3MzMwMDg5Njk4MDc0Njk0.GVW-6o.KDJo8riTxtqffuWQ6bWEmBTwPidrsOXixXh0tM")
+client.login("OTg3MzMwMDg5Njk4MDc0Njk0.Ghv6ra.CbP2vGAiGyEI2ZKawyveIT0qjoMsq2rZQxaSV4")
 client.on("ready", () => {
   console.log(`${client.user.tag}`);
   console.log(`Guilds: ${client.guilds.cache.size}`);
@@ -88,9 +88,9 @@ client.on("message", async message => {
 > anti kick -- anti ban 
 > anti roleC -- anti roleD 
 > anti channelD -- anti channelC
-> n!anti bot [on/off]
-> n!problem [on/off]
-> n!setting  
+> %%anti bot [on/off]
+> %%problem [on/off]
+> %%setting  
 -----------------------------
 
 
@@ -105,7 +105,7 @@ client.on("message", async message => {
 client.on("guildCreate", guild => {
   let embed = new Discord.MessageEmbed()
     .setColor('RANDOM')
-    .setDescription(`Thanks for adding Neno`);
+    .setDescription(`Thanks for adding Sucrity Smart`);
 
   guild.owner.send(embed);
 });
@@ -1361,12 +1361,12 @@ client.on("message", message => {
       .addField("**Channels**", `[ ${client.channels.cache.size} ]`, true)
       .addField("**Users**", `[ ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)} ]`, true)
       .addField("**My Name**", `[ ${client.user.tag} ]`, true)
-      .addField("**My ID**", `[ 785987393349484564 ]`, true)
+      .addField("**My ID**", `[ 859854852653580289 ]`, true)
       .addField("**DiscordJS**", `[ ${Discord.version} ]`, true)
       .addField("**NodeJS**", `[ ${process.version} ]`, true)
       .addField(
         "**Bot-Owners**",
-        `[<@718920448179699733>]
+        `[<@789921556846477364>]
 [2-]`,
         true
       )
