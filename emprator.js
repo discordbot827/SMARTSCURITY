@@ -85,9 +85,9 @@ client.on("message", async message => {
 -----------------------------
  __**🛡 | Security Commands**__ 
 -----------------------------
-> anti kick -- anti ban 
-> anti roleC -- anti roleD 
-> anti channelD -- anti channelC
+> %%anti kick -- %%anti ban 
+> %%anti roleC -- %%anti roleD 
+> %%anti channelD -- %%anti channelC
 > %%anti bot [on/off]
 > %%problem [on/off]
 > %%setting  
