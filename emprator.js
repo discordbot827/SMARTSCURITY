@@ -8,11 +8,6 @@ app.get("/", (request, response) => {
 app.get("/dreams", (request, response) => {
   response.json(dreams);
 });
-const listener = app.listen(process.env.PORT, () => {
-  console.log("Your app is listening on port " + listener.address().port);
-});client.login("OTMyNzMwMzUxOTM0MTExODE0.YeXO1Q.BVetk5GS6HTWKU-Z8n_OxNvZoiE");
-global.mongoose = require('mongoose')
-mongoose.connect("mongodb+srv://BLACKGENARAL:kalare00000$#@@
 /////////////////////////////////////////////////////////
 const { Client, MessageEmbed } = require("discord.js");
 var { Util } = require("discord.js");
@@ -37,6 +32,15 @@ const cmd = require("node-cmd");
 const prefix = "%%";
 const cooldown = new Set();
 const cdtime = 7;
+///////////////
+global.mongoose = require('mongoose')
+mongoose.connect("mongodb+srv://BLACKGENARAL:kalare00000$#@@cluster0.rzsmc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+  console.log("✅ Connected to the database.");
+}).catch((err) => {
+  console.log("❎ Unable to connect to the Mongodb database. Error:" + err);
+});
+
+//////////////
 client.login("OTg3MzMwMDg5Njk4MDc0Njk0.GVW-6o.KDJo8riTxtqffuWQ6bWEmBTwPidrsOXixXh0tM")
 client.on("ready", () => {
   console.log(`${client.user.tag}`);
