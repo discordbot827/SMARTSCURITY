@@ -32,10 +32,10 @@ const dateFormat = require("dateformat");
 var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
-const prefix = "n!";
+const prefix = "%%";
 const cooldown = new Set();
 const cdtime = 7;
-client.login(")
+client.login("OTg3MzMwMDg5Njk4MDc0Njk0.GVW-6o.KDJo8riTxtqffuWQ6bWEmBTwPidrsOXixXh0tM")
 client.on("ready", () => {
   console.log(`${client.user.tag}`);
   console.log(`Guilds: ${client.guilds.cache.size}`);
@@ -43,7 +43,7 @@ client.on("ready", () => {
 });
 client.on("ready", () => {
   setInterval(() => {
-    client.user.setActivity(`Type: n!help | Server ${client.guilds.cache.size}`);
+    client.user.setActivity(`Type: %%help | Server ${client.guilds.cache.size}`);
   }, 2000);
 });
 client.on("warn", info => console.log(info));
@@ -78,9 +78,10 @@ client.on("message", async message => {
 
  __**ℹ | Info \ 📚 | Moderation Commands**__ 
 -----------------------------
-> n!userinfo -- n!ping -- n!serverinfo
-> n!bot -- n!lock -- n!unlock -- n!clear
-> n!ban -- n!mute -- n!unmute -- n!unban
+> %%userinfo -- %%ping -- %%serverinfo
+> %%bot -- %%lock -- %%unlock
+> %%clear -- %%ban -- %%mute
+> %%unmute -- %%unban
 -----------------------------
  __**🛡 | Security Commands**__ 
 -----------------------------
@@ -100,7 +101,7 @@ client.on("message", async message => {
   }
 });
 
-///////
+////////
 client.on("guildCreate", guild => {
   let embed = new Discord.MessageEmbed()
     .setColor('RANDOM')
