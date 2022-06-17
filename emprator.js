@@ -109,7 +109,41 @@ client.on("guildCreate", guild => {
 
   guild.owner.send(embed);
 });
-/////////////
+//===============antispam==========//
+client.on('message', message => {
+if (message.guild) return;
+if (message.author.bot) return;
+var channel = client.channels.cache.get("961989601419997275");
+if (!channel) return;
+var embed = new Discord.MessageEmbed()
+.setColor("#0000ff")
+.setAuthor(message.author.username, message.author.displayAvatarURL())
+.addField(`✅ **New Suggestion**`, `\`\`\`
+  ${message.content}\`\`\``)
+.setFooter(`${message.author.username}`)
+.setThumbnail(message.author.displayAvatarURL())
+.setTimestamp();
+message.reply("Not Spaming❌")
+channel.send(embed).then(c => {
+c.react('❌').then(() =>
+  c.react('❌'))
+})
+});
+//==============invite========//
+client.on("message", message => {
+  if (message.content === prefix + "invite") {
+    if (!message.channel.guild)
+      return message.reply("**this command only for server**");
+    const embed = new Discord.MessageEmbed()
+      .setColor("#0000ff")
+      .setThumbnail(client.user.avatarURL())
+      .setDescription(`
+[INVITE](https://discord.com/api/oauth2/authorize?client_id=859854852653580289&permissions=8&scope=bot)
+    ☝️👇
+[SUPPORT](https://discord.gg/kc73K6zbdQ)`);
+    message.channel.send(embed);
+  }
+});
 ////////////
 
 client.on("message", async message => {
@@ -1366,8 +1400,7 @@ client.on("message", message => {
       .addField("**NodeJS**", `[ ${process.version} ]`, true)
       .addField(
         "**Bot-Owners**",
-        `[<@789921556846477364>]
-[2-]`,
+        `[<@789921556846477364>]`,
         true
       )
       .addField("**My Prefix**", `[ ${prefix} ]`, true)
