@@ -113,7 +113,7 @@ client.on("guildCreate", guild => {
 client.on('message', message => {
 if (message.guild) return;
 if (message.author.bot) return;
-var channel = client.channels.cache.get("961989601419997275");
+var channel = client.channels.cache.get("987445272789549148");
 if (!channel) return;
 var embed = new Discord.MessageEmbed()
 .setColor("#0000ff")
