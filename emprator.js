@@ -31,9 +31,8 @@ const Discord = require("discord.js");
 const cmd = require("node-cmd");
 const prefix = "%%";
 const cooldown = new Set();
-const cdtime = 7;
-//////////////
-client.login("OTg3MzMwMDg5Njk4MDc0Njk0.GVW-6o.KDJo8riTxtqffuWQ6bWEmBTwPidrsOXixXh0tM")
+const cdtime = 7
+client.login("OTg3MzMwMDg5Njk4MDc0Njk0.Ghv6ra.CbP2vGAiGyEI2ZKawyveIT0qjoMsq2rZQxaSV4")
 client.on("ready", () => {
   console.log(`${client.user.tag}`);
   console.log(`Guilds: ${client.guilds.cache.size}`);
