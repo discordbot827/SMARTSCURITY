@@ -35,7 +35,7 @@ const cmd = require("node-cmd");
 const prefix = "%%";
 const cooldown = new Set();
 const cdtime = 7;
-client.login("ODU5ODU0ODUyNjUzNTgwMjg5.GZHYN9.JcsTvSmSufKWpV3zKAEPDKqWEpzlDl3qJp4_LM")
+client.login("ODU5ODU0ODUyNjUzNTgwMjg5.G1jp5Z.yvirlmQlRD5X7Yl1FJVsZcgeGE5cgonEIUTgC8")
 client.on("ready", () => {
   console.log(`${client.user.tag}`);
   console.log(`Guilds: ${client.guilds.cache.size}`);
