@@ -10,7 +10,9 @@ app.get("/dreams", (request, response) => {
 });
 const listener = app.listen(process.env.PORT, () => {
   console.log("Your app is listening on port " + listener.address().port);
-});
+});client.login("OTMyNzMwMzUxOTM0MTExODE0.YeXO1Q.BVetk5GS6HTWKU-Z8n_OxNvZoiE");
+global.mongoose = require('mongoose')
+mongoose.connect("mongodb+srv://BLACKGENARAL:kalare00000$#@@
 /////////////////////////////////////////////////////////
 const { Client, MessageEmbed } = require("discord.js");
 var { Util } = require("discord.js");
